@@ -1520,6 +1520,10 @@ components:
     OrderCreateModel:
       type: object
       properties:
+        customer:
+          type: integer
+          format: int32
+          description: customer id
         items:
           type: array
           items:
@@ -1531,6 +1535,10 @@ components:
         id:
           type: integer
           format: int32
+        customer:
+          type: integer
+          format: int32
+          description: customer id
         items:
           type: array
           items:
