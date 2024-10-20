@@ -1362,7 +1362,7 @@ paths:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/businessListItem'
+                  $ref: '#/components/schemas/BusinessListItem'
         '400':
           description: Invalid data
         '401':
@@ -1392,7 +1392,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/businessItem'
+                $ref: '#/components/schemas/BusinessItem'
         '400':
           description: Invalid data
         '401':
@@ -1412,7 +1412,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/businessCreateModel'
+              $ref: '#/components/schemas/BusinessCreateModel'
         required: true
       responses:
         '200':
@@ -1443,7 +1443,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/businessModifyModel'
+              $ref: '#/components/schemas/BusinessModifyModel'
         required: true
       responses:
         '200':
@@ -2017,7 +2017,7 @@ components:
             - Owner
             - Customer
             - employee
-    businessListItem:    
+    BusinessListItem:    
       type: object
       properties:
         id:
@@ -2027,7 +2027,7 @@ components:
         owner:
           type: string
         
-    businessItem:    
+    BusinessItem:    
       type: object
       properties:
         id:
@@ -2052,7 +2052,7 @@ components:
             type: string   
         
             
-    businessCreateModel:    
+    BusinessCreateModel:    
       type: object
       properties:
         name:
@@ -2073,7 +2073,7 @@ components:
           type: array
           items:
             type: string    
-    businessModifyModel:    
+    BusinessModifyModel:    
       type: object
       properties:
         id:
