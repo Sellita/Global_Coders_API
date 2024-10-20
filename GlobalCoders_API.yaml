@@ -273,8 +273,7 @@ paths:
         content:
           application/json:
             schema:
-              type: integer
-              description: order id
+              $ref: '#/components/schemas/OrderPayModel'
         required: true
       responses:
         '200':
@@ -1564,6 +1563,16 @@ components:
         discountId:
           type: integer
           format: int32
+    OrderPayModel:
+      type: object
+      properties:
+        orderId: 
+          type: integer
+          format: int32
+        paymentMethod:
+          type: string
+        paymentValue:
+          type: number
     PaymentResponseModel:
       type: object
       properties:
